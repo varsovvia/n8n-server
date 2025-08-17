@@ -12,6 +12,7 @@ The goal is to move from a basic deployment to a more secure, production-ready s
 - n8n runs with **Docker Compose** in `/root/n8n`.
 - Exposed at `http://165.232.75.201:5678` (currently no HTTPS).
 - Environment variables set in `docker-compose.yml` (example: `N8N_SECURE_COOKIE=false` to bypass HTTPS for now).
+- **Git Repository**: `n8n-server` - All changes are version controlled here.
 
 ## Next Steps
 1. Configure **Cloudflare Tunnel + custom domain** → secure HTTPS access.
@@ -41,6 +42,25 @@ docker compose down
 View logs:
 
 docker compose logs -f
+
+## Git Repository Setup
+- **Repository**: `n8n-server`
+- **Remote Origin**: https://github.com/varsovvia/n8n-server.git
+- **Branch**: `master`
+- **Initial Commit**: ✅ Completed with n8n setup and documentation
+
+### Git Commands
+```bash
+# Add and commit changes
+git add .
+git commit -m "Description of changes"
+
+# Push to remote repository
+git push origin master
+
+# Pull latest changes
+git pull origin master
+```
 
 Reminder for Cursor AI
 
